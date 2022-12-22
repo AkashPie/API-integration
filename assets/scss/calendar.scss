@@ -1,0 +1,226 @@
+@import "colors";
+@import "fonts";
+body {
+  font-family: "DM Sans", sans-serif !important;
+  section {
+      position: relative;
+      padding: 16px 0 35px;
+    }
+  .main-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .card {
+    border: none;
+    border-radius: 9px;
+    background-color: rgba($lightBlue, 20%);
+    margin-bottom: 50px;
+    max-width: 470px;
+    .card-body {
+      padding: 26px 25px;
+      .icon {
+        margin-bottom: 14px;
+      }
+      .card-title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 26px;
+      }
+      .card-text {
+        font-size: 24px;
+        margin-bottom: 77px;
+      }
+      .progress-bar-wrapper {
+        .title {
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        .progress {
+          height: 10px;
+          background-color: rgba($lightBlue, 33%);
+          .progress-bar {
+            border-radius: 6px;
+            background-color: $lightBlue;
+          }
+        }
+      }
+    }
+  }
+  .my-card.week-view {
+      .hasDatepicker {
+        display: none;
+    }
+  }
+  .my-card.month-view {
+    .hasDatepicker {
+      display: block;
+    }
+    .meeting-wrapper {
+      display: none;
+    }
+  }
+  .team-card.week-view {
+      .hasDatepicker {
+        display: none;
+    }
+  }
+  .team-card.month-view {
+    .hasDatepicker {
+      display: block;
+    }
+    .meeting-wrapper {
+      display: none;
+    }
+  }
+  .calendar {
+      .main-title {
+        max-width: 495px;
+      }
+      .card {
+        padding: 35px 40px;
+        max-width: 495px;
+        .card-header{
+          padding: 0;
+          background-color: transparent;
+          border: none;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 40px;
+          .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-bottom: 0;
+          }
+          .arrows {
+            display: flex;
+            margin-left: 16px;
+            button {
+              margin-right: 11px;
+              &:last-child {
+                margin-right: unset;
+                margin-left: 11px;
+              }
+            }
+          }
+          button {
+            border: none;
+          }
+          .month {
+            font-size: 10px;
+            font-weight: 700;
+            margin-bottom: 0;
+          }
+        }
+        .arrows {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .card-body {
+          padding: 0;
+          .meeting-wrapper {
+            margin-bottom: 40px;
+            &::before {
+              margin-bottom: 0;
+            }
+            .meet-date {
+              font-size: 16px;
+              font-weight: 700;
+              margin-bottom: 10px;
+            }
+            .meeting-lable {
+              width: 100%;
+              text-align: center;
+              padding: 21px 30px;
+              background-color: rgba($lightBlue, 10%);
+              border-radius: 9px;
+              color: rgba($lightBlue, .6);
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .ui-datepicker {
+        .ui-datepicker-header {
+          display: none;
+        }
+      }
+    }
+  .ui-datepicker {
+    .ui-datepicker-header {
+      background-color: transparent;
+      color: $darkBlue;
+      text-align: center;
+      padding: 10px;
+      height: 40px;
+      border-radius: 8px 8px 0px 0px;
+      width: 100%;
+      display: flex;
+      .ui-datepicker-prev {
+        &:after {
+          content: "<";
+          float: left;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+      .ui-datepicker-next {
+        &:after {
+          content: ">";
+          float: left;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .ui-datepicker-calendar {
+      text-align: center;
+      padding: 8px;
+      width: 100%;
+      th {
+        span {
+          font-size: 20px;
+          font-weight: 700;
+          color: $lightBlue;
+          margin-bottom: 22px;
+          display: block;
+        }
+      }
+      td {
+        width: 14.28%;
+        a {
+          font-size: 20px;
+          font-weight: 700;
+          text-decoration: none;
+          color: $darkBlue;
+          padding: 18px 0;
+          display: block;
+          transition: all .5s;
+        }
+        a.ui-state-active {
+          color: $white;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: $darkBlue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 9px;
+            z-index: -1;
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+
+}

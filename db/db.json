@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "brandName": "ABCD 1",
+      "projectName": "ABCD 2",
+      "projectDescription": "ABCD 3asasasasas",
+      "ParticipantCount": "5",
+      "questionSet": "C:\\fakepath\\sample.csv",
+      "isQuestionSetAsked": true,
+      "id": 3
+    }
+  ],
+  "schedules": [],
+  "meetings": [
+    {
+      "id": 0
+    }
+  ],
+  "notes": [
+    {
+      "meetingId": 0,
+      "note": "sdsdsdsds",
+      "timestamp": 7598.600000143051,
+      "id": 0
+    },
+    {
+      "meetingId": 0,
+      "note": "sassasasasasa",
+      "timestamp": 9260.700000047684,
+      "id": 1
+    },
+    {
+      "meetingId": 0,
+      "note": "asdsdsdsdsd",
+      "timestamp": 5443.700000047684,
+      "id": 2
+    }
+  ]
+}

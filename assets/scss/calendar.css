@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans/DMSans-Regular.eot");
+  src: url("../fonts/dm-sans/DMSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans/DMSans-Regular.woff2") format("woff2"), url("../fonts/dm-sans/DMSans-Regular.woff") format("woff"), url("../fonts/dm-sans/DMSans-Regular.ttf") format("truetype"), url("../fonts/dm-sans/DMSans-Regular.svg#Exo2-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans/DMSans-Medium.eot");
+  src: url("../fonts/dm-sans/DMSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans/DMSans-Medium.woff2") format("woff2"), url("../fonts/dm-sans/DMSans-Medium.woff") format("woff"), url("../fonts/dm-sans/DMSans-Medium.ttf") format("truetype"), url("../fonts/dm-sans/DMSans-Medium.svg#Exo2-Regular") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans/DMSans-Bold.eot");
+  src: url("../fonts/dm-sans/DMSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-sans/DMSans-Bold.woff2") format("woff2"), url("../fonts/dm-sans/DMSans-Bold.woff") format("woff"), url("../fonts/dm-sans/DMSans-Bold.ttf") format("truetype"), url("../fonts/dm-sans/DMSans-Bold.svg#Exo2-Regular") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+body section {
+  position: relative;
+  padding: 16px 0 35px;
+}
+
+body .main-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+body .card {
+  border: none;
+  border-radius: 9px;
+  background-color: #a3aed0;
+  margin-bottom: 50px;
+  max-width: 470px;
+}
+
+body .card .card-body {
+  padding: 26px 25px;
+}
+
+body .card .card-body .icon {
+  margin-bottom: 14px;
+}
+
+body .card .card-body .card-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+body .card .card-body .card-text {
+  font-size: 24px;
+  margin-bottom: 77px;
+}
+
+body .card .card-body .progress-bar-wrapper .title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+body .card .card-body .progress-bar-wrapper .progress {
+  height: 10px;
+  background-color: #a3aed0;
+}
+
+body .card .card-body .progress-bar-wrapper .progress .progress-bar {
+  border-radius: 6px;
+  background-color: #A3AED0;
+}
+
+body .my-card.week-view .hasDatepicker {
+  display: none;
+}
+
+body .my-card.month-view .hasDatepicker {
+  display: block;
+}
+
+body .my-card.month-view .meeting-wrapper {
+  display: none;
+}
+
+body .team-card.week-view .hasDatepicker {
+  display: none;
+}
+
+body .team-card.month-view .hasDatepicker {
+  display: block;
+}
+
+body .team-card.month-view .meeting-wrapper {
+  display: none;
+}
+
+body .calendar .main-title {
+  max-width: 495px;
+}
+
+body .calendar .card {
+  padding: 35px 40px;
+  max-width: 495px;
+}
+
+body .calendar .card .card-header {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+body .calendar .card .card-header .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+body .calendar .card .card-header .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 16px;
+}
+
+body .calendar .card .card-header .arrows button {
+  margin-right: 11px;
+}
+
+body .calendar .card .card-header .arrows button:last-child {
+  margin-right: unset;
+  margin-left: 11px;
+}
+
+body .calendar .card .card-header button {
+  border: none;
+}
+
+body .calendar .card .card-header .month {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+body .calendar .card .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .calendar .card .card-body {
+  padding: 0;
+}
+
+body .calendar .card .card-body .meeting-wrapper {
+  margin-bottom: 40px;
+}
+
+body .calendar .card .card-body .meeting-wrapper::before {
+  margin-bottom: 0;
+}
+
+body .calendar .card .card-body .meeting-wrapper .meet-date {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+body .calendar .card .card-body .meeting-wrapper .meeting-lable {
+  width: 100%;
+  text-align: center;
+  padding: 21px 30px;
+  background-color: #a3aed0;
+  border-radius: 9px;
+  color: rgba(163, 174, 208, 0.6);
+}
+
+body .calendar .card .card-body .meeting-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+body .calendar .ui-datepicker .ui-datepicker-header {
+  display: none;
+}
+
+body .ui-datepicker .ui-datepicker-header {
+  background-color: transparent;
+  color: #0D1F2A;
+  text-align: center;
+  padding: 10px;
+  height: 40px;
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:after {
+  content: "<";
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+body .ui-datepicker .ui-datepicker-header .ui-datepicker-next:after {
+  content: ">";
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+body .ui-datepicker .ui-datepicker-calendar {
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+}
+
+body .ui-datepicker .ui-datepicker-calendar th span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #A3AED0;
+  margin-bottom: 22px;
+  display: block;
+}
+
+body .ui-datepicker .ui-datepicker-calendar td {
+  width: 14.28%;
+}
+
+body .ui-datepicker .ui-datepicker-calendar td a {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0D1F2A;
+  padding: 18px 0;
+  display: block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body .ui-datepicker .ui-datepicker-calendar td a.ui-state-active {
+  color: #fff;
+  position: relative;
+}
+
+body .ui-datepicker .ui-datepicker-calendar td a.ui-state-active::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #0D1F2A;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 9px;
+  z-index: -1;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+/*# sourceMappingURL=calendar.css.map */

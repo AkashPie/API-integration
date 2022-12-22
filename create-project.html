@@ -1,0 +1,51 @@
+<section id="create-project">
+  <form>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-wrapper">
+          <label for="brandName" class="form-label">Brand Name</label>
+          <input required name="brandName" type="text" class="form-control" placeholder="Lorem Ipsum" id="brandName">
+        </div>
+        <div class="input-wrapper">
+          <label for="projectName" class="form-label">Project Name</label>
+          <input required name="projectName" type="text" class="form-control" placeholder="Lorem Ipsum"
+            id="projectName">
+        </div>
+        <div class="input-wrapper">
+          <label for="projectDesc" class="form-label">Project Description</label>
+          <input required name="projectDescription" type="text" class="form-control" placeholder="Lorem Ipsum"
+            id="projectDescription">
+        </div>
+        <div class="input-wrapper">
+          <label for="participant" class="form-label">Number of Participant</label>
+          <input required name='numberOfParticipant' type="number" class="form-control" placeholder="Lorem Ipsum"
+            id="numberOfParticipant">
+        </div>
+        <div class="input-wrapper">
+          <button type="button" class=" btn btn-light w-100">Add Screener</button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="d-flex align-items-center">
+          <div class="custom-file-uploader input-wrapper">
+            <div class="form-label">Upload Question Set</div>
+            <input name="questionSet" type="file" onchange="uploadqQestionSet()"
+              accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+              class="form-control d-none" placeholder="Lorem Ipsum" id="questionSet">
+            <label for="questionSet" class="custom-input form-control" id="questionSetFileName"></label>
+          </div>
+          <div class="form-check">
+            <input name="isQuestionSetAsked" title="isQuestionSetAsked" class="form-check-input d-none" type="checkbox"
+              value="" id="isQuestionSetAsked">
+            <label class="form-check-label " for="isQuestionSetAsked"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-end">
+      <button type="button" id="save-project" onclick="saveProject()" class="btn btn-dark btn-custom">Save
+        Project
+      </button>
+    </div>
+  </form>
+</section>
